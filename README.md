@@ -55,6 +55,7 @@ If you're interested in contributing, please feel free to reach out to any of th
 - [@avtn96](https://github.com/avtn96)
 - [@RotemPorat1](https://github.com/RotemPorat1)
 - [@gpariente](https://github.com/gpariente)
+- [@Almog1Elbaz](https://github.com/Almog1Elbaz)
 
 # To get started:
 1. Fork the Project
