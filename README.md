@@ -49,11 +49,19 @@ Academic Management: Utilize the system for broader academic management and deci
 
 # Note: This guide provides a basic overview.
 
-# Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+# Contributions to CEMS are greatly appreciated. Whether it's reporting a bug, suggesting an enhancement, or adding new features, your input is valuable.
+If you're interested in contributing, please feel free to reach out to any of the core team members for guidance:
+- [@avtn96](https://github.com/avtn96)
+- [@RotemPorat1](https://github.com/RotemPorat1)
+- [@gpariente](https://github.com/gpariente)
+
+# To get started:
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
 
 # Contact
 Ofek Ben Avraham - benavrahamofek@gmail.com
