@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerDefineExamCodeFormController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="525.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Button fx:id="btnExit" layoutX="451.0" layoutY="379.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="453.0" layoutY="12.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="109.0" layoutY="92.0" prefHeight="38.0" prefWidth="216.0" text="Define code to exam:" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Label>
+            <Label fx:id="lecturerNameLbl" layoutX="44.0" layoutY="21.0" prefHeight="17.0" prefWidth="114.0" />
+            <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="15.0" layoutY="16.0">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="146.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code:" wrappingWidth="36.404296875" />
+            <TextField fx:id="code" layoutX="201.0" layoutY="168.0" prefHeight="25.0" prefWidth="164.0" />
+            <Button fx:id="btnSearch" layoutX="375.0" layoutY="379.0" mnemonicParsing="false" onAction="#addExamCode" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #D3B291;" text="Define">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="textError" fill="#f86060" layoutX="132.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="261.7999572753906" />
+            <Label fx:id="examId" layoutX="321.0" layoutY="92.0" prefHeight="38.0" prefWidth="85.0" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" layoutX="201.0" layoutY="227.0" prefHeight="25.0" prefWidth="164.0" />
+            <Text layoutX="146.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="36.404296875" />
+            <Spinner fx:id="hourSpinner" layoutX="201.0" layoutY="301.0" prefHeight="25.0" prefWidth="65.0" />
+            <Spinner fx:id="minuteSpinner" layoutX="299.0" layoutY="301.0" prefHeight="25.0" prefWidth="65.0" />
+            <Text layoutX="146.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="time:" wrappingWidth="36.40429303050041" />
+            <Text layoutX="215.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hour" wrappingWidth="36.40429303050041" />
+            <Text layoutX="308.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="minute" wrappingWidth="46.40429303050041" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

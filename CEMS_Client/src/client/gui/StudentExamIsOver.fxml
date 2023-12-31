@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="554.0" style="-fx-background-color: #FFEEDB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.StudentExamIsOverController">
+   <children>
+      <Label fx:id="lblFirstName" layoutX="40.0" layoutY="5.0" text="student name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBackToMainPage" layoutX="190.0" layoutY="139.0" mnemonicParsing="false" onAction="#ExitFromExamIsOverButton" prefHeight="34.0" prefWidth="175.0" style="-fx-background-color: #f29705;" text="Go Back To Main Page" textFill="#344955">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="63.0" prefHeight="26.0" prefWidth="479.0" text="Exam Is Over" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="192.0" text="Good Luck!" />
+      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="5.0" layoutY="5.0">
+         <image>
+            <Image url="@/images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="490.0" layoutY="5.0">
+         <image>
+            <Image url="@/images/cemsLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

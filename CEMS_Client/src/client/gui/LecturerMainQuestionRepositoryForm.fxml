@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerMainQuestionRepositoryFormController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="389.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Button fx:id="btnExit" layoutX="310.0" layoutY="361.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearchRepository" layoutX="88.0" layoutY="149.0" mnemonicParsing="false" onAction="#searchRepository" prefHeight="81.0" prefWidth="214.0" style="-fx-background-color: #D3B291;" text="Search existant question repository" textFill="#344955" />
+            <Button fx:id="btnMyRepository" layoutX="88.0" layoutY="247.0" mnemonicParsing="false" onAction="#getMyRepository" prefHeight="81.0" prefWidth="214.0" style="-fx-background-color: #D3B291;" text="Open my repository" textFill="#344955" />
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="316.0" layoutY="16.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="98.0" layoutY="76.0" prefHeight="38.0" prefWidth="195.0" text="Main qusetion page" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Label>
+            <Label layoutX="147.0" layoutY="114.0" prefWidth="98.0" text="choose an action" />
+            <Label fx:id="lecturerNameLbl" layoutX="44.0" layoutY="21.0" prefHeight="17.0" prefWidth="78.0" />
+            <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="15.0" layoutY="16.0">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

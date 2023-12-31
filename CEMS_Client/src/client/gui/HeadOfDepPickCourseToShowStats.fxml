@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.HeadOfDepPickCourseToShowStatsController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="374.0" prefWidth="478.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <TableView fx:id="dataTbl" layoutX="34.0" layoutY="110.0" prefHeight="154.0" prefWidth="411.0">
+              <columns>
+                  <TableColumn fx:id="codeCol" prefWidth="195.20000457763672" text="Code" />
+                <TableColumn fx:id="courseNameCol" prefWidth="215.199951171875" text="Name" />
+              </columns>
+            </TableView>
+            <Label layoutX="193.0" layoutY="50.0" prefHeight="34.0" prefWidth="92.0" text="Courses">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="viewDataBtn" layoutX="164.0" layoutY="302.0" mnemonicParsing="false" onAction="#getCoursesExams" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #D3B291;" text="View Exams Of Course" textFill="#344955" />
+            <Button fx:id="backBtn" layoutX="411.0" layoutY="336.0" mnemonicParsing="false" onAction="#getBackBtn" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="164.0" layoutY="77.0" prefHeight="27.0" prefWidth="151.0" text="Select Lecturer To See Stats" />
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="13.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="headOfDepNameLbl" layoutX="53.0" layoutY="21.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="57.0" layoutX="410.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="errorlbl" layoutX="183.0" layoutY="273.0" prefHeight="17.0" prefWidth="151.0" textFill="RED" />
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

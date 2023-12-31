@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #FFEEDB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerValidateExamFormController">
+   <children>
+      <Pane prefHeight="442.0" prefWidth="516.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Label layoutX="171.0" layoutY="48.0" text="Approve Exam Page">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="commentsTxtArea" layoutX="34.0" layoutY="203.0" prefHeight="118.0" prefWidth="342.0" />
+            <Label layoutX="33.0" layoutY="171.0" text="Add comments:">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label layoutX="33.0" layoutY="103.0" text="Grade:">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="39.0" layoutY="75.0" text="Student:">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="studentIdLbl" layoutX="105.0" layoutY="75.0" prefHeight="20.0" prefWidth="129.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button fx:id="approveBtn" layoutX="193.0" layoutY="369.0" mnemonicParsing="false" onAction="#approveExam" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #D3B291;" text="Approve Exam" textFill="#344955" />
+            <Button fx:id="backBtn" layoutX="447.0" layoutY="403.0" mnemonicParsing="false" onAction="#getBack" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="showExamBtn" layoutX="33.0" layoutY="138.0" mnemonicParsing="false" onAction="#ShowExam" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #D3B291;" text="Show Exam" textFill="#344955" />
+            <Label fx:id="errorLbl" layoutX="106.0" layoutY="270.0" prefHeight="17.0" prefWidth="196.0" textFill="RED" />
+            <Label fx:id="gradeLbl" layoutX="79.0" layoutY="103.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="103.0" text="New Grade:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="newGradeSpinner" layoutX="267.0" layoutY="101.0" prefHeight="25.0" prefWidth="61.0" />
+            <Label fx:id="cheatedLbl" layoutX="270.0" layoutY="75.0" prefHeight="20.0" prefWidth="212.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="feedbackLbl" layoutX="44.0" layoutY="340.0" prefHeight="20.0" prefWidth="270.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="443.0" layoutY="4.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="58.0" layoutY="19.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

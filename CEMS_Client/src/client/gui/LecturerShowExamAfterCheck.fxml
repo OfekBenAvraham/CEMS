@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="648.0" prefWidth="802.0" style="-fx-background-color: #FFEEDB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerShowExamAfterCheckController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="638.0" prefWidth="824.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <TableView fx:id="questionsTbl" layoutY="153.0" prefHeight="366.0" prefWidth="726.0">
+              <columns>
+                <TableColumn fx:id="questionIdCol" prefWidth="55.200013756752014" sortable="false" text="ID" />
+                <TableColumn fx:id="questionTextCol" prefWidth="131.1999740600586" sortable="false" text="Question Text" />
+                  <TableColumn fx:id="optionOneCol" prefWidth="97.59996032714844" sortable="false" text="Option 1" />
+                  <TableColumn fx:id="optionTwoCol" prefWidth="88.79998779296875" sortable="false" text="Option 2" />
+                  <TableColumn fx:id="optionThreeCol" prefWidth="84.0" sortable="false" text="Option 3" />
+                  <TableColumn fx:id="optionFourCol" prefWidth="93.5999755859375" sortable="false" text="Option 4" />
+                  <TableColumn fx:id="correctAnsCol" prefWidth="110.4000244140625" sortable="false" text="Correct Answer" />
+                  <TableColumn fx:id="questionPtsCol" prefWidth="62.20001220703125" sortable="false" text="Points" />
+              </columns>
+            </TableView>
+            <Label layoutX="278.0" layoutY="82.0" prefHeight="32.0" prefWidth="170.0" text="Exam of student:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="studentIdLabel" layoutX="460.0" layoutY="82.0" prefHeight="32.0" prefWidth="170.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitBtn" layoutX="731.0" layoutY="592.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="32.0" prefWidth="81.0" style="-fx-background-color: #F86060;" text="Exit">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <TableView fx:id="studentAnswerTbl" layoutX="722.0" layoutY="153.0" prefHeight="366.0" prefWidth="99.0">
+              <columns>
+                <TableColumn fx:id="studentAnswerCol" prefWidth="98.20001220703125" sortable="false" text="Answer" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="84.0" fitWidth="73.0" layoutX="746.0" layoutY="14.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="13.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="53.0" layoutY="26.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
