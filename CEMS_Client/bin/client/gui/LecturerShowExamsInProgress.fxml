@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="385.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerShowExamsInProgressController">
+   <children>
+      <Pane prefHeight="394.0" prefWidth="546.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Label layoutX="123.0" layoutY="44.0" prefHeight="30.0" prefWidth="296.0" text="Computerized Exams In Progress">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="examsInProgTbl" layoutX="28.0" layoutY="81.0" prefHeight="200.0" prefWidth="486.0">
+              <columns>
+                <TableColumn fx:id="executionCodeCol" prefWidth="99.99999618530273" text="Execution Code" />
+                  <TableColumn fx:id="examIdCol" prefWidth="56.79998779296875" text="Exam Id" />
+                <TableColumn fx:id="courseNameCol" prefWidth="60.0" text="Course" />
+                  <TableColumn fx:id="dateCol" prefWidth="159.20001220703125" text="Start Time" />
+                  <TableColumn fx:id="durationCol" minWidth="0.0" prefWidth="109.59994506835938" text="Duration" />
+              </columns>
+            </TableView>
+            <Button fx:id="lockExamBtn" layoutX="28.0" layoutY="301.0" mnemonicParsing="false" onAction="#lockExam" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #D3B291;" text="Lock Exam" textFill="#344955" />
+            <Button fx:id="reqTimeAddBtn" layoutX="369.0" layoutY="301.0" mnemonicParsing="false" onAction="#requestTimeChangeForExam" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #D3B291;" text="Request Time Addition" textFill="#344955" />
+            <Button fx:id="backBtn" layoutX="479.0" layoutY="355.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #F86060;" text="Back" />
+            <Label fx:id="feedbackLbl" layoutX="28.0" layoutY="346.0" prefHeight="20.0" prefWidth="232.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="53.0" layoutX="487.0" layoutY="6.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="2.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="42.0" layoutY="14.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

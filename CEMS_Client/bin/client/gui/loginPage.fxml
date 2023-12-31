@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="600.0" style="-fx-background-color: #FFEEDB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LoginPageController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="266.0" style="-fx-background-color: #FFEEDB;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="236.0" fitWidth="293.0" layoutX="18.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="335.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="116.0" text="Username" textFill="#e89a47">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="156.0" text="Password" textFill="#e89a47">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="161.0" layoutY="119.0" promptText="Username" />
+            <TextField fx:id="passwordField" layoutX="161.0" layoutY="158.0" promptText="Password" />
+            <Button fx:id="loginBtn" layoutX="130.0" layoutY="284.0" mnemonicParsing="false" onAction="#loginToServer" prefHeight="33.0" prefWidth="62.0" style="-fx-background-color: #e89a47;" text="Login" />
+            <Label fx:id="errorlbl" layoutX="19.0" layoutY="245.0" prefHeight="18.0" prefWidth="304.0" textFill="RED" />
+            <RadioButton fx:id="studentSelect" layoutX="14.0" layoutY="212.0" mnemonicParsing="false" text="Student">
+               <toggleGroup>
+                  <ToggleGroup fx:id="loginTgl" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="LecturerSelect" layoutX="102.0" layoutY="212.0" mnemonicParsing="false" text="Lecturer" toggleGroup="$loginTgl" />
+            <RadioButton fx:id="HeadOfDepSelect" layoutX="189.0" layoutY="212.0" mnemonicParsing="false" text="Head Of Department" toggleGroup="$loginTgl" />
+            <ImageView fitHeight="60.0" fitWidth="66.0" layoutX="131.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

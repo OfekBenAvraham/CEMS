@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+   <children>
+      <Pane layoutX="10.0" prefHeight="320.0" prefWidth="540.0">
+         <children>
+            <MenuButton alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="58.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Filter By">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Filter By Lecturer" />
+                <MenuItem mnemonicParsing="false" text="Filter By Course" />
+                  <MenuItem mnemonicParsing="false" text="Filter By Student" />
+              </items>
+            </MenuButton>
+            <Button layoutX="472.0" layoutY="281.0" mnemonicParsing="false" text="Exit" />
+            <TextField layoutX="170.0" layoutY="182.0" prefHeight="25.0" prefWidth="189.0" />
+            <Label layoutX="181.0" layoutY="152.0" text="CHANGED BY FILTER BY CHOSEN" />
+            <Button layoutX="239.0" layoutY="256.0" mnemonicParsing="false" text="Search" />
+            <Label layoutX="181.0" layoutY="14.0" text="Show Statistical Data">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="226.0" text="VALIDATE LABEL IN CASE OF NOT FOUND/ERROR" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

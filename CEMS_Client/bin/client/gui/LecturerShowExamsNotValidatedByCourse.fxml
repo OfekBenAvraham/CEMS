@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerShowExamsNotValidatedController">
+   <children>
+      <Pane prefHeight="395.0" prefWidth="538.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Label layoutX="229.0" layoutY="14.0" text="Exams">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="studentsTbl" layoutX="258.0" layoutY="98.0" prefHeight="200.0" prefWidth="255.0">
+              <columns>
+                <TableColumn fx:id="studentIdCol" prefWidth="254.19998168945312" text="Student ID" />
+              </columns>
+            </TableView>
+            <Button fx:id="validateBtn" layoutX="235.0" layoutY="356.0" mnemonicParsing="false" onAction="#showExamToValidate" style="-fx-background-color: #D3B291;" text="Validate" textFill="#344955" />
+            <Label fx:id="errorLbl" layoutX="157.0" layoutY="331.0" prefHeight="17.0" prefWidth="228.0" textFill="RED" />
+            <Label layoutX="178.0" layoutY="49.0" text="Select Exam To Validate">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBtn" layoutX="466.0" layoutY="356.0" mnemonicParsing="false" onAction="#getBackBtn" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="168.0" text="Students To Validate:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="studentsCounterLbl" layoutX="153.0" layoutY="168.0" prefHeight="20.0" prefWidth="47.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseNameLbl" layoutX="70.0" layoutY="98.0" prefHeight="20.0" prefWidth="150.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateOfExamLbl" layoutX="61.0" layoutY="132.0" prefHeight="20.0" prefWidth="150.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="98.0" prefHeight="20.0" prefWidth="59.0" text="Course:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="132.0" prefHeight="17.0" prefWidth="47.0" text="Date:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="467.0" layoutY="14.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="53.0" layoutY="22.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

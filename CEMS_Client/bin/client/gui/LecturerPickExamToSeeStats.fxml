@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #FFEEDB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerPickExamToSeeStatsController">
+   <children>
+      <Pane prefHeight="395.0" prefWidth="538.0">
+         <children>
+            <Label layoutX="235.0" layoutY="41.0" text="Exams">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="validateBtn" layoutX="224.0" layoutY="356.0" mnemonicParsing="false" onAction="#showExam" style="-fx-background-color: #D3B291;" text="Watch Statistics" textFill="#344955" />
+            <Label fx:id="errorLbl" layoutX="164.0" layoutY="324.0" prefHeight="17.0" prefWidth="220.0" textFill="RED" />
+            <Label layoutX="182.0" layoutY="74.0" text="Select Exam To See Stats">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBtn" layoutX="477.0" layoutY="357.0" mnemonicParsing="false" onAction="#getExitBtn" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="460.0" layoutY="14.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="7.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="47.0" layoutY="29.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="examsTbl" layoutX="4.0" layoutY="116.0" prefHeight="200.0" prefWidth="530.0">
+               <columns>
+                  <TableColumn fx:id="courseCodeCln" prefWidth="85.6000030040741" text="Course Code" />
+                  <TableColumn fx:id="courseNameClm" prefWidth="109.5999755859375" text="Course Name" />
+                  <TableColumn fx:id="examCodeClm" prefWidth="91.20002746582031" text="Exam Code" />
+                  <TableColumn fx:id="examIdCol" prefWidth="101.60003662109375" text="Exam ID" />
+                  <TableColumn fx:id="dateClm" prefWidth="151.199951171875" text="Date" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

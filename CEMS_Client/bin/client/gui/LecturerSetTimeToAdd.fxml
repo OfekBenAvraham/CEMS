@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="183.0" prefWidth="333.0" style="-fx-background-color: #FFEEDB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerSetTimeToAddController">
+   <children>
+      <Pane prefHeight="374.0" prefWidth="432.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Label layoutX="132.0" layoutY="67.0" prefHeight="26.0" prefWidth="169.0" text="Set Time To Add">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRequest" layoutX="168.0" layoutY="256.0" mnemonicParsing="false" onAction="#requestTimeChange" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #D3B291;" text="Request" textFill="#344955" />
+            <Button fx:id="btnExit" layoutX="384.0" layoutY="336.0" mnemonicParsing="false" onAction="#getExit" style="-fx-background-color: #F86060;" text="Exit">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="feebackLbl" layoutX="11.0" layoutY="301.0" prefHeight="26.0" prefWidth="414.0" />
+            <Spinner fx:id="timeToAddSpr" layoutX="219.0" layoutY="124.0" prefHeight="25.0" prefWidth="77.0" />
+            <Label layoutX="30.0" layoutY="124.0" prefHeight="25.0" prefWidth="169.0" text="Time to add ( minutes ):">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="freeTexttxtArea" layoutX="91.0" layoutY="171.0" prefHeight="66.0" prefWidth="255.0" />
+            <Label layoutX="30.0" layoutY="192.0" text="Text:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="66.0" fitWidth="57.0" layoutX="367.0" layoutY="6.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="51.0" layoutY="23.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

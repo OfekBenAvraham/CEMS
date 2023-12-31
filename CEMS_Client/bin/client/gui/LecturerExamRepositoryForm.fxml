@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="368.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerExamRepositoryFormController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="640.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Button fx:id="btnExit" layoutX="561.0" layoutY="360.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="567.0" layoutY="15.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="44.0" layoutY="20.0" prefHeight="17.0" prefWidth="108.0" />
+            <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="14.0" layoutY="15.0">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table" layoutX="121.0" layoutY="132.0" prefHeight="181.0" prefWidth="398.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="76.79998779296875" text="ID" />
+                  <TableColumn fx:id="courseName" prefWidth="94.4000244140625" text="Course" />
+                  <TableColumn fx:id="fieldName" prefWidth="112.79998779296875" text="Field" />
+                  <TableColumn fx:id="duration" prefWidth="111.20001220703125" text="Duration" />
+               </columns>
+            </TableView>
+            <Button fx:id="showExam" layoutX="121.0" layoutY="336.0" mnemonicParsing="false" onAction="#showExam" style="-fx-background-color: #F9AA33;" text="Show exam" />
+            <Text fx:id="textError" fill="#f86060" layoutX="189.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="261.7999572753906" />
+            <Label layoutX="121.0" layoutY="313.0" prefHeight="17.0" prefWidth="294.0" text="click on an exam before pressing the show button" />
+            <Label layoutX="135.0" layoutY="56.0" prefHeight="38.0" prefWidth="241.0" text="Exam repository owner:" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblrepositoryOwner" layoutX="370.0" layoutY="56.0" prefHeight="38.0" prefWidth="178.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

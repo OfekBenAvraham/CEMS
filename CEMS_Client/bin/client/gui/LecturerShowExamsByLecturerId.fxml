@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #FFEEDB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerShowExamByLecturerIdController">
+   <children>
+      <Pane prefHeight="395.0" prefWidth="538.0">
+         <children>
+            <Label layoutX="231.0" layoutY="39.0" text="Exams">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="examsTbl" layoutX="26.0" layoutY="116.0" prefHeight="200.0" prefWidth="486.0">
+              <columns>
+                <TableColumn fx:id="courseCodeCln" prefWidth="85.59997367858887" text="Course Code" />
+                <TableColumn fx:id="courseNameClm" prefWidth="88.00000762939453" text="Course Name" />
+                <TableColumn fx:id="examCodeClm" prefWidth="75.20001220703125" text="Exam Code" />
+                <TableColumn fx:id="examIdCol" prefWidth="82.4000244140625" text="Exam ID" />
+                <TableColumn fx:id="dateClm" prefWidth="160.79995727539062" text="Date" />
+              </columns>
+            </TableView>
+            <Button fx:id="validateBtn" layoutX="235.0" layoutY="356.0" mnemonicParsing="false" onAction="#showExamsToValidate" style="-fx-background-color: #D3B291;" text="Validate" textFill="#344955" />
+            <Label fx:id="errorLbl" layoutX="165.0" layoutY="331.0" prefHeight="17.0" prefWidth="220.0" textFill="RED" />
+            <Label layoutX="180.0" layoutY="84.0" text="Select Exam To Validate">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBtn" layoutX="466.0" layoutY="356.0" mnemonicParsing="false" onAction="#getExitBtn" style="-fx-background-color: #F86060;" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="460.0" layoutY="14.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="7.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lecturerNameLbl" layoutX="47.0" layoutY="29.0" prefHeight="20.0" prefWidth="151.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

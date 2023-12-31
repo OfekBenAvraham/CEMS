@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controllers.LecturerMainFormController">
+   <children>
+      <Pane layoutX="-6.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="401.0" style="-fx-background-color: #FFEEDB;">
+         <children>
+            <Button fx:id="btnExit" layoutX="325.0" layoutY="397.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #F86060;" text="Logout">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnQuestionRepository" layoutX="127.0" layoutY="138.0" mnemonicParsing="false" onAction="#getQuestionRepository" prefWidth="150.0" style="-fx-background-color: #D3B291;" text="Question repository" textFill="#344955" />
+            <Button fx:id="btnViewReports" layoutX="126.0" layoutY="229.0" mnemonicParsing="false" onAction="#getViewReports" prefWidth="150.0" style="-fx-background-color: #D3B291;" text="View reports" textFill="#344955" />
+            <Button fx:id="btnValidateExam" layoutX="126.0" layoutY="274.0" mnemonicParsing="false" onAction="#getValidateExam" prefWidth="150.0" style="-fx-background-color: #D3B291;" text="Validate exam" textFill="#344955" />
+            <Button fx:id="btnExamInPrograss" layoutX="126.0" layoutY="319.0" mnemonicParsing="false" onAction="#getExamInProgress" prefWidth="150.0" style="-fx-background-color: #D3B291;" text="Exams in progress" textFill="#344955" />
+            <Button fx:id="btnExamRepository" layoutX="126.0" layoutY="186.0" mnemonicParsing="false" onAction="#getExamRepository" prefWidth="150.0" style="-fx-background-color: #D3B291;" text="Exam repository" textFill="#344955" />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="65.0" text="Hello,">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lecturerNameLbl" layoutX="64.0" layoutY="14.0" text="lecturer name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="328.0" layoutY="14.0">
+               <image>
+                  <Image url="@/images/cemsLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="151.0" layoutY="66.0" text="Main page">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="108.0" prefWidth="93.0" text="choose an action" />
+            <Button fx:id="btnActiveExam" layoutX="128.0" layoutY="362.0" mnemonicParsing="false" onAction="#activateExam" prefWidth="150.0" style="-fx-background-color: #D3B291;" text="Activate exam" textFill="#344955" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
