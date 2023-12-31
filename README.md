@@ -16,11 +16,13 @@ Grade Access and Analysis: View grades, receive feedback, and delve into persona
 Resource Center: Access study materials and past exam papers for improved preparation.
 
 # Getting Started
-Prerequisites
-MySQL
+Prerequisites:
+
+MySQL,
 Java
 
-Installation
+Installation:
+
 bash
 Copy code
 # Clone the repo
