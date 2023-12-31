@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="439.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerPortController">
+	<children>
+		<Pane prefHeight="439.0" prefWidth="1071.0" style="-fx-background-color: #344955;">
+			<children>
+				<Text fill="#eee9e9" layoutX="354.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection CEMS" wrappingWidth="137.7148365676403">
+					<font>
+						<Font name="Calibri" size="16.0" />
+					</font>
+				</Text>
+				<Button fx:id="btnConnectDB" layoutX="386.0" layoutY="298.0" mnemonicParsing="false" onAction="#connectActionButton" style="-fx-background-color: #F9AA33;" text="connect" textFill="#0f131b">
+					<font>
+						<Font name="Calibri" size="14.0" />
+					</font>
+				</Button>
+				<TextField fx:id="txtPort" layoutX="419.0" layoutY="170.0" prefHeight="30.0" prefWidth="145.0" />
+				<Text fill="#fffbfb" layoutX="313.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="port">
+					<font>
+						<Font name="Calibri" size="14.0" />
+					</font>
+				</Text>
+				<Label fx:id="lblErrorPort" alignment="CENTER" layoutX="324.0" layoutY="272.0" prefHeight="17.0" prefWidth="189.0" textFill="#f86060">
+					<font>
+						<Font name="Calibri Bold" size="12.0" />
+					</font>
+				</Label>
+				<Text fill="#fffbfb" layoutX="313.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DB password">
+					<font>
+						<Font name="Calibri" size="14.0" />
+					</font>
+				</Text>
+				<TextField fx:id="txtDBPassword" layoutX="419.0" layoutY="120.0" prefHeight="30.0" prefWidth="145.0" />
+				<Text fill="#fffbfb" layoutX="313.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP">
+					<font>
+						<Font name="Calibri" size="14.0" />
+					</font>
+				</Text>
+				<TextField fx:id="txtIP" layoutX="419.0" layoutY="220.0" prefHeight="30.0" prefWidth="145.0" />
+				<Text fill="WHITE" layoutX="738.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Network Info" wrappingWidth="129.46994018554688">
+					<font>
+						<Font name="Calibri" size="16.0" />
+					</font>
+				</Text>
+				<TableView fx:id="table" layoutX="591.0" layoutY="117.0" prefHeight="240.0" prefWidth="423.0">
+					<columns>
+						<TableColumn fx:id="columnIP" prefWidth="136.0" text="IP" />
+						<TableColumn fx:id="columnHost" prefWidth="148.0" text="Host" />
+						<TableColumn fx:id="columnStatus" prefWidth="135.0" text="Connection Status" />
+					</columns>
+				</TableView>
+				<Button fx:id="btnExit" layoutX="993.0" layoutY="391.0" mnemonicParsing="false" onAction="#getExitButton" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #f86060;" text="Exit">
+					<font>
+						<Font name="Calibri" size="14.0" />
+					</font>
+				</Button>
+				<Label layoutX="491.0" layoutY="14.0" text="CEMS Server" textFill="WHITE">
+					<font>
+						<Font size="36.0" />
+					</font>
+				</Label>
+				<AnchorPane prefHeight="439.0" prefWidth="236.0" style="-fx-background-color: #FFEEDB;">
+					<children>
+						<ImageView fitHeight="202.0" fitWidth="225.0" layoutX="19.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../CEMS_common/src/images/cemsLogo.png" />
+							</image>
+						</ImageView>
+					</children>
+				</AnchorPane>
+				<Button fx:id="btnAddData" layoutX="551.0" layoutY="391.0" mnemonicParsing="false" onAction="#getDataBtn" prefHeight="0.0" prefWidth="81.0" style="-fx-background-color: #e89a47;" text="Add data" textFill="#0f131b">
+					<font>
+						<Font name="Calibri" size="14.0" />
+					</font>
+				</Button>
+				<RadioButton fx:id="lecturersInCourseRB" layoutX="253.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleOptionSelected" text="Lecturers in course" textFill="WHITE" />
+				<RadioButton fx:id="usersRB" layoutX="387.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleOptionSelected" text="Users" textFill="WHITE" />
+				<RadioButton fx:id="fieldsRB" layoutX="386.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleOptionSelected" text="Fields" textFill="WHITE" />
+				<RadioButton fx:id="studentsInCourseRB" layoutX="254.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleOptionSelected" text="Students in course" textFill="WHITE" />
+				<RadioButton fx:id="coursesRB" layoutX="452.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleOptionSelected" text="Courses" textFill="WHITE" />
+				<Text fill="#fcfcfc" layoutX="250.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pick data to insert into the data base" textAlignment="CENTER" wrappingWidth="200.86523300036788" />
+            <Label fx:id="lblSuccess" alignment="CENTER" layoutX="254.0" layoutY="272.0" prefHeight="17.0" prefWidth="328.0" textFill="#3fd33f">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Label>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
