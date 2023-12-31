@@ -49,7 +49,8 @@ Academic Management: Utilize the system for broader academic management and deci
 
 Note: This guide provides a basic overview.
 
-# Contributions to CEMS are greatly appreciated. Whether it's reporting a bug, suggesting an enhancement, or adding new features, your input is valuable.
+# Contributions
+Contributions to CEMS are greatly appreciated. Whether it's reporting a bug, suggesting an enhancement, or adding new features, your input is valuable.
 If you're interested in contributing, please feel free to reach out to any of the core team members for guidance:
 - [@avtn96](https://github.com/avtn96)
 - [@RotemPorat1](https://github.com/RotemPorat1)
