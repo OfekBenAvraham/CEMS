@@ -21,10 +21,6 @@ Prerequisites:
 MySQL,
 Java
 
-Installation:
-
-bash
-Copy code
 # Clone the repo
 git clone https://github.com/OfekBenAvraham/CEMS
 
