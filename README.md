@@ -22,7 +22,9 @@ MySQL,
 Java
 
 # Clone the repo
+```
 git clone https://github.com/OfekBenAvraham/CEMS
+```
 
 # Usage
 CEMS offers a user-friendly interface for students, lecturers, and heads of departments, each with tailored functionalities to cater to their specific needs. Here's a brief guide to get started:
